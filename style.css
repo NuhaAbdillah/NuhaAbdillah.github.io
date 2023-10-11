@@ -1,0 +1,90 @@
+/* Menentukan font yang akan dipakai */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+
+body {
+    padding: 0;
+    margin: 0;
+
+    /* define font family */
+    font-family: 'Quicksand', sans-serif;
+    background-color: #cdb4db;
+
+    /* define the layout */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    height: 100vh;
+    overflow-x: hidden;
+}   
+
+.container {
+    background-color: #dad7cd;
+
+    /* menentukan lebar container */
+    width: 91%;
+    max-width: 680px;
+    margin: 10px;
+    padding: 50px 0px 100px 0px;
+
+    /* define the layout */
+    /* elemen yang ada di container menjadi center */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* set the image profile */
+.img-container img {
+    width: 190px;
+    border-radius: 50%;
+}
+
+/* set container title */
+.title-container {
+    /* set the layout */
+    width: 97%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    text-align: center;
+
+    /* set the text colour */
+    color:  palevioletred;
+}
+
+/* Set the link item elements */
+.link-item {
+    width: 95%;
+    height: 56px;
+    margin: 16px;
+    border-radius: 20px;
+
+    /* text color and background color */
+    background-color: #cdb4db;
+    color: palevioletred;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    margin: 3px 8px;
+    width: 44px;
+    height: 44px;
+}
+
+.link-item p {
+    margin-right: 60px;
+    background-color: rgb (72, 66, 66);
+
+}
+
+.link-item:hover {
+    transition: cubic-bezier(07, 1.41, 82, 1.41);
+    transform: scale(1.04);
+    background-color: #8f5aad;
+    transition:  0.4s;
+}
